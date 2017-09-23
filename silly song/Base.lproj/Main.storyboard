@@ -1,24 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="LaoSangamMN.ttf">
+            <string>LaoSangamMN</string>
+        </array>
+        <array key="MarkerFeltWide.ttf">
+            <string>MarkerFelt-Wide</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--he-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="silly_song" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Create your Silly Song!" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fft-zx-UTs">
+                                <rect key="frame" x="66" y="20" width="243" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="87" id="6KS-er-2fn"/>
+                                    <constraint firstAttribute="height" constant="87" id="aL2-8j-Nrh"/>
+                                    <constraint firstAttribute="width" secondItem="Fft-zx-UTs" secondAttribute="height" multiplier="81:29" id="gcS-OP-Irt"/>
+                                    <constraint firstAttribute="width" constant="243" id="mHw-La-Nq1"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="243" id="v2v-wq-iTq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tKn-Zn-TX7">
+                                <rect key="frame" x="67" y="148" width="240" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.83581501349999998" blue="0.038371925250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tKn-Zn-TX7" secondAttribute="height" multiplier="8:1" id="0wa-xY-mPK"/>
+                                    <constraint firstAttribute="width" secondItem="tKn-Zn-TX7" secondAttribute="height" multiplier="8:1" id="DFd-bM-Xtb"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="Qls-4l-S8x"/>
+                                    <constraint firstAttribute="width" constant="240" id="Ukv-cl-Ke3"/>
+                                    <constraint firstAttribute="height" constant="30" id="aAO-TM-SJr"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="mYn-QB-Phl"/>
+                                </constraints>
+                                <color key="textColor" red="0.015361884715025864" green="0.012889521326200618" blue="0.00071243913214617187" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Enter Your Name so we can have some FUN!!!" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="KfO-77-2NA">
+                                <rect key="frame" x="67" y="238" width="240" height="152"/>
+                                <color key="backgroundColor" red="1" green="0.60494267700000004" blue="0.33403911670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="DLC-0R-hhT"/>
+                                    <constraint firstAttribute="width" secondItem="KfO-77-2NA" secondAttribute="height" multiplier="30:19" id="ewu-BB-nE2"/>
+                                    <constraint firstAttribute="width" constant="240" id="mSa-Xu-hNI"/>
+                                    <constraint firstAttribute="width" secondItem="KfO-77-2NA" secondAttribute="height" multiplier="30:19" id="muU-Be-Xje"/>
+                                    <constraint firstAttribute="width" secondItem="KfO-77-2NA" secondAttribute="height" multiplier="30:19" id="oza-13-YsP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" lookupSuggestion="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.60494267699649429" blue="0.33403911672602726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.83581501351200826" blue="0.03837192524547639" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tKn-Zn-TX7" firstAttribute="top" secondItem="Fft-zx-UTs" secondAttribute="bottom" constant="41" id="HiV-qE-Y4c"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="he" id="tZm-CB-sOM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>
